@@ -1,0 +1,64 @@
+# Site
+title:              Cara Moretti
+bio:                'Graphic design &amp; email marketing specialist.'
+description:        "Portfolio of Franklin, Wisconsin-based graphic design &amp; email marketing specialist Cara Moretti."
+locale:             en_US
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
+remote_theme: iwiedenm/jekyll-theme-massively-src
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/experience/:title/"
+    layout: post
+    author:
+
+# Jekyll
+permalink:          /experience/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   default
+
+# Social
+analytics-id:       "default"
+linkedin:           cara-moretti
+facebook:           default
+instagram:          default
+github:             default
+
+# personal
+location:           Franklin, Wisconsin &bull; Milwaukee, Wisconsin
+phone:              414-555-5555
+email:              craemoret&#64;gmail.com
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/experience/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
