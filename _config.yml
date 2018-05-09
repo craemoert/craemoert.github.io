@@ -3,8 +3,8 @@ title:              Cara Moretti
 bio:                'Graphic design &amp; email marketing specialist.'
 description:        "Portfolio of Franklin, Wisconsin-based graphic design &amp; email marketing specialist Cara Moretti."
 locale:             en_US
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
+baseurl: "/gh-pages" # the subpath of your site, e.g. /blog
+url: "https://craemoert.github.io" # the base hostname & protocol for your site
 remote_theme: iwiedenm/jekyll-theme-massively-src
 
 defaults:
